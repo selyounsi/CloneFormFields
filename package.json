@@ -1,0 +1,9 @@
+{
+    "dependencies": {
+        "esbuild": "^0.23.0"
+    },
+    "scripts": {
+        "build": "esbuild src/scripts/main.js src/styles/main.css --minify --outdir=dist --out-extension:.js=.min.js --out-extension:.css=.min.css",
+        "watch": "npm run build -- --watch"
+    }
+}
